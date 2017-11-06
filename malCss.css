@@ -1,6 +1,6 @@
 html{
             margin: auto;
-            background-color: #F4DECB;
+            background-color: #F5F5F5;
         }
         #container{
           /*  border:4px solid red;*/
@@ -17,13 +17,11 @@ html{
             width: 100%;
             float: left;
             background-color: white;
-            border-top:2px solid black;
-            border-bottom:2px solid black;
         }
         #banner{
             position:fixed;
             height:180px;
-            width: 1280px;
+            width: 100%;
         }
         #content{
             position:relative;
@@ -35,12 +33,14 @@ html{
         }
         .menyCss{
             position:relative;
-            width: calc(96.9%/5);
+            width: calc(98.42%/5);
             height: 40px;
             float: left;
             text-align: center;
             vertical-align: middle;
             line-height: 40px;
+            border-top:2px solid #062F4F;
+            border-bottom:2px solid #062F4F;
             border-left: 2px solid white;
             border-right:2px solid white;
 
