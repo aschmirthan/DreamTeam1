@@ -1,0 +1,105 @@
+html{
+            margin: auto;
+            background-color: #F9F7F2;
+        }
+        #container{
+          /*  border:4px solid red;*/
+            padding: 4px;
+            height: 800px;
+            margin-left: -11.8px;
+            margin-top: -11.8px;
+            margin: auto;
+        }
+        #banner{
+            position:relative;
+            width: 100.9%;
+            height: 100px;
+            text-align: center;
+            background-color: #F9F7F2;
+            z-index: -1;
+        }
+        #logo:first-letter {
+            font-size: 60px;
+        }
+        #logo {
+            font-family: "serif";
+            display: inline-block;
+            font-size: 50px;
+            color: black;
+            font-style: normal;
+            position: relative;
+            top: 10px;
+        }
+        #meny{
+          /*  border: 2px solid blue;*/
+            height: 44px;
+            width: 100.9%;
+            background-color: #F9F7F2;
+            overflow: hidden;
+            display: table;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 44px;
+        }
+        #content{
+            position: relative;
+            top: 20px;
+            width: 85%;
+            font-size: 30px;
+            margin: auto;
+            height: 700px;
+            padding: 20px;
+            text-align: left;
+            z-index: -1;
+        }
+        #imgCont {
+            float: right;
+            width: 400px
+        }
+        ul {
+            list-style-type: none;
+            margin:0;
+            padding: 0;
+            height: 50px;
+            overflow: hidden;
+        }
+        li {
+            float: left;
+            width: calc(100%/5);
+            height: 44px;
+            display: inline;
+            color: black;
+        }
+        li a{
+            display: block;
+            color:black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li:hover{
+            color: gray;
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+            transition:0.5s;
+            cursor:pointer;
+        }
+        li:visited {
+            color: black;
+        }
+
+
+        .sticky {
+          position: sticky;
+          top: 0;
+          width: 100%;
+        }
+        .sticky + .content {
+            padding-top: 60px;
+        }
+
+
+
+
+
+

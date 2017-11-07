@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mal</title>
+    <link rel="stylesheet" type="text/css" href="malCss.css">
+</head>
+<body onscroll="myFunction()">
+    <div id="container">
+        <div id="banner">
+            <div id = "logo">GOLDEN  D A O</div>
+        </div>
+        <div id="meny" class="menyCSS1">
+            <ul>
+            <a href="#menu"><li id="menu" class="menyCss">Menu</li></a>
+            <a href="#about"><li id="about" class="menyCss">About</li></a>
+            <a href="#restaurant"><li id="restaurant" class="menyCss">Restaurant</li></a>
+            <a href="#reservation"><li id="reservation" class="menyCss">Reservation</li></a>
+            <a href="#contact"><li id="contact" class="menyCss">Contact</li></a>
+            </ul>
+        </div>
+        <div id="content">
+            <img id = "imgCont" src="http://images.genius.com/16206d3edc736021e552c2d099ab1d2b.549x549x1.jpg">
+            Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien.
+            Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet,
+            da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok.
+            Lorem Ipsum har tålt tidens tann usedvanlig godt, og har i tillegg til å bestå gjennom fem århundrer
+            også tålt spranget over til elektronisk typografi uten vesentlige endringer.
+            Lorem Ipsum ble gjort allment kjent i 1960-årene ved lanseringen
+            av Letraset-ark med avsnitt fra Lorem Ipsum,
+            og senere med sideombrekkingsprogrammet Aldus PageMaker som
+            tok i bruk nettopp Lorem Ipsum for dummytekst.
+        </div>
+    </div>
+
+    <script>
+        var navbar = document.getElementById("meny");
+        var sticky = navbar.offsetTop;
+        var meny = document.getElementsByClassName("menyCSS1");
+        var classSticky = document.getElementsByClassName('menyCss');
+        for(var i=0; i<classSticky.length;i++){
+            classSticky[i].style.width = (navbar.style.width/5)-20;
+            console.log(classSticky[i]);
+        }
+
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+          }
+          else {
+            navbar.classList.remove("sticky");
+          }
+        }
+
+    </script>
+
+</body>
+</html>
+
