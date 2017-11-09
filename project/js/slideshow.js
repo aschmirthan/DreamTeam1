@@ -1,8 +1,8 @@
-/funker med id ="slide"
+//funker med id ="slide"
 
 
-const slidelist = ["slide1.png","slide2.png","slide3.png"];
-var sIndex = 0;
+const slidelist = ["slide0.png", "slide1.png","slide2.jpg","slide3.jpg", "slide10.jpg", "slide5.jpg", "slide6.jpg", "slide7.jpg", "slide8.jpg", "slide9.jpg"];
+var sIndex = 1;
 var slide = document.getElementById("slide");
 
 function slideshowAuto(){
@@ -36,5 +36,6 @@ slide.onclick = function(evt){
             sIndex = 0;
         }
     }
+    console.log(slidelist[sIndex]);
     slide.src="img/"+slidelist[sIndex];
 }
