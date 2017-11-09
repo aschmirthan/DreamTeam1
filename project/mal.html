@@ -5,7 +5,7 @@
     <title>mal</title>
     <link rel="stylesheet" type="text/css" href="css/malCss.css">
 </head>
-<body onscroll="myFunction()">
+<body>
     <div id="container">
         <div id="banner">
             <div id = "logo">GOLDEN  D A O</div>
@@ -41,54 +41,11 @@
             og senere med sideombrekkingsprogrammet Aldus PageMaker som
             tok i bruk nettopp Lorem Ipsum for dummytekst.
         </div>
+        </div>
     </div>
 
-    <script>
-        var navbar = document.getElementById("heleMenybar");
-        var navbarIcon = document.getElementById("navbarIcon");
-        var sticky = navbar.offsetTop;
-        var classSticky = document.getElementsByClassName('menyCss');
-        for(var i=0; i<classSticky.length;i++){
-            classSticky[i].style.width = (navbar.style.width/5)-20;
-        }
-
-
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky");
-          }
-          else {
-            navbar.classList.remove("sticky");
-          }
-        }
-
-
-
-        let openedMenu = false;
-
-        function openMenu(){
-            meny1 = document.getElementById('meny');
-
-            if(!openedMenu){
-                meny1.style.display = "block";
-                openedMenu = true;
-
-            }
-            else{
-                meny1.style.display = "none";
-                openedMenu = false;
-
-            }
-        }
-        function myFunction1(x) {
-                x.classList.toggle("change");
-                openMenu();
-            }
-
-
-    </script>
+    <script src="js/mal.js"></script>
 
 </body>
 </html>
-
 
