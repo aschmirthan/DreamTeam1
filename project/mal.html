@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>mal</title>
-    <link rel="stylesheet" type="text/css" href="malCss.css">
+    <link rel="stylesheet" type="text/css" href="css/malCss.css">
 </head>
 <body onscroll="myFunction()">
     <div id="container">
         <div id="banner">
             <div id = "logo">GOLDEN  D A O</div>
         </div>
+    <!--
+         <div class="tlf" onclick="myFunction1(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+         </div>
+         -->
+
         <div id="meny" class="menyCSS1">
             <ul>
-            <a href="#menu"><li id="menu" class="menyCss">Menu</li></a>
-            <a href="#about"><li id="about" class="menyCss">About</li></a>
-            <a href="#restaurant"><li id="restaurant" class="menyCss">Restaurant</li></a>
-            <a href="#reservation"><li id="reservation" class="menyCss">Reservation</li></a>
-            <a href="#contact"><li id="contact" class="menyCss">Contact</li></a>
+                <a href="index.html"><li id="home" class="menyCss">Home</li></a>
+                <a href="menu.html"><li id="menu" class="menyCss">Menu</li></a>
+                <a href="about.html"><li id="about" class="menyCss">About</li></a>
+                <a href="restaurant.html"><li id="restaurant" class="menyCss">Restaurant</li></a>
+                <a href="reservation.html"><li id="reservation" class="menyCss">Reservation</li></a>
+                <a href="contact.html"><li id="contact" class="menyCss">Contact</li></a>
             </ul>
         </div>
         <div id="content">
@@ -36,7 +45,6 @@
     <script>
         var navbar = document.getElementById("meny");
         var sticky = navbar.offsetTop;
-        var meny = document.getElementsByClassName("menyCSS1");
         var classSticky = document.getElementsByClassName('menyCss');
         for(var i=0; i<classSticky.length;i++){
             classSticky[i].style.width = (navbar.style.width/5)-20;
@@ -52,6 +60,30 @@
             navbar.classList.remove("sticky");
           }
         }
+
+
+        let openedMenu = false;
+
+        function openMenu(){
+            meny1 = document.getElementById('meny');
+
+            if(!openedMenu){
+                meny1.style.display = "block";
+                openedMenu = true;
+                meny1.style.width = "200px";
+                meny1.style.border = "2px solid black";
+            }
+            else{
+                meny1.style.display = "none";
+                openedMenu = false;
+                meny1.style.width = "0px";
+            }
+        }
+        function myFunction1(x) {
+                x.classList.toggle("change");
+                openMenu();
+            }
+
 
     </script>
 
