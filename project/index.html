@@ -21,7 +21,8 @@
             transform: translate(-50%, -50%);
             font-size: 100px;
             font-family: Harrington;
-            color:navy;
+            color: #F9F7F2;
+            text-shadow: 2px 2px black;
          }
 
         #slide{
@@ -29,7 +30,7 @@
         }
     </style>
 </head>
-<body onscroll="myFunction()">
+<body>
     <div id="divSlideshow">
         <img id="slide" src="img/slide0.png" width="100%" height="100%"></img>
         <h1 id="title">Golden Dao</h1>
@@ -39,7 +40,7 @@
             <div id = "logo">GOLDEN  D A O</div>
         </div>
         <div id="heleMenybar">
-             <div id="navbarIcon" class="tlf" onclick="myFunction1(this)">
+             <div id="navbarIcon" class="tlf" onclick="shownavbarIcon(this)">
                   <div class="bar1"></div>
                   <div class="bar2"></div>
                   <div class="bar3"></div>
@@ -74,7 +75,6 @@
     <script>
 
         var navbar = document.getElementById("heleMenybar");
-        var navbarIcon = document.getElementById("navbarIcon");
         var sticky = navbar.offsetTop;
         var classSticky = document.getElementsByClassName('menyCss');
         for(var i=0; i<classSticky.length;i++){
@@ -82,7 +82,7 @@
         }
 
 
-        function myFunction() {
+        window.onscroll = function() {
           if (window.pageYOffset >= sticky) {
             navbar.classList.add("sticky");
           }
@@ -109,10 +109,21 @@
 
             }
         }
-        function myFunction1(x) {
+
+        function shownavbarIcon(x) {
                 x.classList.toggle("change");
                 openMenu();
             }
+        window.onresize = function(){
+            if(window.innerWidth>700){
+                meny1.style.display = "block";
+                openedMenu = false;
+            }
+            else{
+                openedMenu = true;
+                openMenu();
+            }
+        }
 
 
     </script>
@@ -120,5 +131,4 @@
 
 </body>
 </html>
-
 
