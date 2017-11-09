@@ -1,6 +1,6 @@
         html{
             margin: auto;
-            background-color: #e1dad5;
+            background-color: #F9F7F2;
         }
         #container{
           /*  border:4px solid red;*/
@@ -8,75 +8,151 @@
             height: 800px;
             margin-left: -11.8px;
             margin-top: -11.8px;
-
-        }
-        #meny{
-          /*  border: 2px solid blue;*/
-            position: fixed;
-            top: 100px;
-            height: 40px;
-            width: 100%;
-            float: left;
-            background-color: white;
+            margin: auto;
         }
         #banner{
-            position:fixed;
-            width: 100%;
+            position:relative;
+            width: 100.9%;
             height: 100px;
             text-align: center;
-            background-color: #e1dad5;
+            background-color: #F9F7F2;
+            z-index: -1;
         }
         #logo:first-letter {
             font-size: 60px;
         }
         #logo {
-            font-family: "Georgia Pro Cond";
+            font-family: harrington;
             display: inline-block;
             font-size: 50px;
-            color: #00253d;
+            color: black;
             font-style: normal;
             position: relative;
-            top:10px;
-
+            top: 10px;
         }
-        #content{
-            position:relative;
-            top: 170px;
-            width:100%;
-            height: 700px;
-            padding: 5px;
-            z-index: -1;
-        }
-        .menyCss{
-            position:relative;
-            width: calc(98.42%/5);
-            height: 40px;
-            float: left;
+        #meny{
+          /*  border: 2px solid blue;*/
+            height: 44px;
+            width: 100.9%;
+            background-color: #F9F7F2;
+            overflow: hidden;
+            display: table;
             text-align: center;
             vertical-align: middle;
-            line-height: 40px;
-            background-color: white;
-            border-top:2px solid #062F4F;
-            border-bottom:2px solid #062F4F;
-            border-left: 2px solid white;
-            border-right:2px solid white;
-
+            line-height: 44px;
         }
-        a{
+        #content{
+            position: relative;
+            top: 20px;
+            width: 85%;
+            font-size: 30px;
+            margin: auto;
+            height: 700px;
+            padding: 20px;
+            text-align: left;
+            z-index: -1;
+        }
+        #imgCont {
+            float: right;
+            width: 400px
+        }
+        ul {
+            list-style-type: none;
+            margin:0;
+            padding: 0;
+            height: 50px;
+            overflow: hidden;
+        }
+        li {
+            float: left;
+            width: calc(100%/6);
+            height: 44px;
+            display: inline;
+            color: black;
+        }
+        li a{
+            display: block;
             color:black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
-
-        a:hover{
-            color:red;
-        }
-
-
-        .menyCSS1 div:hover{
-            border-left: 2px solid red;
-            border-right: 2px solid red;
-            border-top: 2px solid white;
-            border-bottom: 2px solid white;
-            transition:0.8s;
+        li:hover{
+            color: gray;
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+            transition:0.5s;
             cursor:pointer;
+        }
+        li:visited {
+            color: black;
+        }
+
+
+        .sticky {
+          position: sticky;
+          top: 0;
+          width: 100%;
+        }
+        .sticky + .content {
+            padding-top: 60px;
+        }
+
+
+
+        @media screen and (max-width: 700px) {
+            #meny {
+                display: none;
+                height: 40px;
+                float: none;
+            }
+            .tlf {
+                display: inline-block;
+                cursor: pointer;
+                margin-left: 30px;
+            }
+
+            .bar1, .bar2, .bar3 {
+                width: 35px;
+                height: 5px;
+                background-color: #333;
+                margin: 6px 0;
+                transition: 0.4s;
+            }
+
+            .change .bar1 {
+                -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                transform: rotate(-45deg) translate(-9px, 6px);
+            }
+
+            .change .bar2 {
+                opacity: 0;
+            }
+
+            .change .bar3 {
+                -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                transform: rotate(45deg) translate(-8px, -8px);
+            }
+            li{
+                width: 100%;
+                float: inherit;
+            }
+
+            #content{
+                font-size: 12px;}
+            }
+
 
         }
+
+        @media screen and (min-width: 701px) {
+            #meny {
+                display: block;
+            }
+            .tlf {
+                display: none;
+            }
+
+
+
+
