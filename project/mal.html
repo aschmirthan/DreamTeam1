@@ -10,24 +10,25 @@
         <div id="banner">
             <div id = "logo">GOLDEN  D A O</div>
         </div>
-    <!--
-         <div class="tlf" onclick="myFunction1(this)">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-         </div>
-         -->
 
-        <div id="meny" class="menyCSS1">
-            <ul>
-                <a href="index.html"><li id="home" class="menyCss">Home</li></a>
-                <a href="menu.html"><li id="menu" class="menyCss">Menu</li></a>
-                <a href="about.html"><li id="about" class="menyCss">About</li></a>
-                <a href="restaurant.html"><li id="restaurant" class="menyCss">Restaurant</li></a>
-                <a href="reservation.html"><li id="reservation" class="menyCss">Reservation</li></a>
-                <a href="contact.html"><li id="contact" class="menyCss">Contact</li></a>
-            </ul>
-        </div>
+         <div id="heleMenybar">
+             <div id="navbarIcon" class="tlf" onclick="myFunction1(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+             </div>
+
+
+            <div id="meny" class="menyCSS1">
+                <ul class="menybar">
+                    <a href="index.html"><li id="home" class="menyCss">Home</li></a>
+                    <a href="menu.html"><li id="menu" class="menyCss">Menu</li></a>
+                    <a href="about.html"><li id="about" class="menyCss">About</li></a>
+                    <a href="restaurant.html"><li id="restaurant" class="menyCss">Restaurant</li></a>
+                    <a href="reservation.html"><li id="reservation" class="menyCss">Reservation</li></a>
+                    <a href="contact.html"><li id="contact" class="menyCss">Contact</li></a>
+                </ul>
+            </div>
         <div id="content">
             <img id = "imgCont" src="http://images.genius.com/16206d3edc736021e552c2d099ab1d2b.549x549x1.jpg">
             Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien.
@@ -43,12 +44,12 @@
     </div>
 
     <script>
-        var navbar = document.getElementById("meny");
+        var navbar = document.getElementById("heleMenybar");
+        var navbarIcon = document.getElementById("navbarIcon");
         var sticky = navbar.offsetTop;
         var classSticky = document.getElementsByClassName('menyCss');
         for(var i=0; i<classSticky.length;i++){
             classSticky[i].style.width = (navbar.style.width/5)-20;
-            console.log(classSticky[i]);
         }
 
 
@@ -62,6 +63,7 @@
         }
 
 
+
         let openedMenu = false;
 
         function openMenu(){
@@ -70,13 +72,12 @@
             if(!openedMenu){
                 meny1.style.display = "block";
                 openedMenu = true;
-                meny1.style.width = "200px";
-                meny1.style.border = "2px solid black";
+
             }
             else{
                 meny1.style.display = "none";
                 openedMenu = false;
-                meny1.style.width = "0px";
+
             }
         }
         function myFunction1(x) {
@@ -89,4 +90,5 @@
 
 </body>
 </html>
+
 
