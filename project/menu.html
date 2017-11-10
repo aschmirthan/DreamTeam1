@@ -3,138 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <title>mal</title>
+    <link rel="stylesheet" type="text/css" href="css/malCss.css">
+    <script src="js/foods.js"></script>
     <style>
-        html{
-            margin: auto;
-        }
-        #container{
-          /*  border:4px solid red;*/
-            padding: 4px;
-            height: 800px;
-        }
-        #meny{
-          /*  border: 2px solid blue;*/
-            position: fixed;
-            top:120px;
-            height: 40px;
-            width: 100%;
-            float: left;
-        }
-        #banner{
-            position:fixed;
-            height:100px;
-            width: 100%;
-        }
-        #content{
-            position:relative;
-            top: 164px;
-            border: 2px solid black;
-            width:100%;
-            height: 700px;
-            z-index: -1;
-        }
-        .menyCss{
-            position:relative;
-            width: calc(96.9%/5);
-            height: 40px;
-            border-top:2px solid black;
-            border-bottom:2px solid black;
-            float: left;
-            text-align: center;
-            vertical-align: middle;
-            line-height: 40px;
-            border-left: 2px solid white;
-            border-right:2px solid white;
+    ul {
+      height: auto;
+    }
 
-        }
-        a{
-            color:black;
-        }
+    li {
+      height: auto;
+    }
 
-        a:hover{
-            color:red;
-        }
+    #allergy {
+      font-style: italic;
+    }
 
+    .matrettBilde {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
 
-        .menyCSS1 div:hover{
-            border-left: 2px solid red;
-            border-right: 2px solid red;
-            border-top: 2px solid white;
-            border-bottom: 2px solid white;
-            transition:0.8s;
-            cursor:pointer;
+    .rettCSS {
+      box-shadow: 1px 1px 1px grey;
+      margin: 10px;
+    }
 
-        }
-
-        h1 {
-          font-family: sans-serif;
-          text-align: center;
-        }
-
+    #matretter {
+      align-items: 50px;
+    }
     </style>
 </head>
 <body>
     <div id="container">
         <div id="banner">
-            <img src="img/banner.png" width="98.5%" height="100%%">
+            <div id = "logo">GOLDEN  D A O</div>
         </div>
-        <div id="meny" class="menyCSS1">
-            <a href="#menu"><div id="menu" class="menyCss">Menu</div></a>
-            <a href="#about"><div id="about" class="menyCss">About</div></a>
-            <a href="#restaurant"><div id="restaurant" class="menyCss">Restaurant</div></a>
-            <a href="#reservation"><div id="reservation" class="menyCss">Reservation</div></a>
-            <a href="#contact"><div id="contact" class="menyCss">Contact</div></a>
-        </div>
+
+         <div id="heleMenybar">
+             <div id="navbarIcon" class="tlf" onclick="shownavbarIcon(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+             </div>
+
+
+            <div id="meny" class="menyCSS1">
+                <ul class="menybar">
+                    <a href="index.html"><li id="home" class="menyCss">Home</li></a>
+                    <a href="menu.html"><li id="menu" class="menyCss">Menu</li></a>
+                    <a href="about.html"><li id="about" class="menyCss">About</li></a>
+                    <a href="restaurant.html"><li id="restaurant" class="menyCss">Restaurant</li></a>
+                    <a href="reservation.html"><li id="reservation" class="menyCss">Reservation</li></a>
+                    <a href="contact.html"><li id="contact" class="menyCss">Contact</li></a>
+                </ul>
+            </div>
+         </div>
         <div id="content">
-          <h1>:Insert page name here:</h1>
-          <div>
-            <h3>Go to</h3>
-            <ul>
-              <li><a href="#appetizers">Appetizers</a></li> <!-- #id her skal erstattes med id-taggen til stedet å siden man skla hoppe til. F.eks. #mainCourse-->
-              <li><a href="#mainCourse">Main Course</a></li>
-              <li><a href="#dessert">Dessert</a></li>
-            </ul>
-          </div>
-          <div>
-            <div>
-              <h2><a id="appetizers">Appetizers</a></h2>
-              <p>Justo donec enim diam vulputate ut pharetra sit. Lacinia at quis risus sed vulputate odio ut. Nascetur ridiculus mus mauris vitae ultricies leo integer. Netus et malesuada fames ac turpis. Cras pulvinar mattis nunc sed blandit. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Mauris nunc congue nisi vitae. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Blandit turpis cursus in hac. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Eget nunc lobortis mattis aliquam faucibus. Sagittis vitae et leo duis ut diam quam. Mattis ullamcorper velit sed ullamcorper. Ac felis donec et odio pellentesque diam. Quis risus sed vulputate odio ut enim blandit volutpat. At consectetur lorem donec massa sapien faucibus et. Aenean sed adipiscing diam donec adipiscing tristique risus. Suspendisse ultrices gravida dictum fusce ut placerat. Orci sagittis eu volutpat odio facilisis mauris. Odio tempor orci dapibus ultrices in iaculis nunc sed.
-
-              Lobortis feugiat vivamus at augue eget arcu dictum varius. Lobortis elementum nibh tellus molestie nunc non. Sed adipiscing diam donec adipiscing tristique risus. Sed turpis tincidunt id aliquet. Donec adipiscing tristique risus nec feugiat. Nec ullamcorper sit amet risus nullam eget felis. Blandit aliquam etiam erat velit. Tincidunt ornare massa eget egestas. Sed turpis tincidunt id aliquet risus feugiat. Blandit massa enim nec dui nunc mattis enim ut. Quam elementum pulvinar etiam non quam lacus. Ac turpis egestas sed tempus urna et pharetra. Tortor posuere ac ut consequat. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet.
-
-              Sit amet purus gravida quis blandit turpis cursus in. Auctor eu augue ut lectus arcu bibendum at varius vel. Vel pretium lectus quam id leo in vitae turpis. Mi tempus imperdiet nulla malesuada. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Malesuada fames ac turpis egestas. Nisl nunc mi ipsum faucibus vitae aliquet nec. Elementum sagittis vitae et leo duis. Interdum posuere lorem ipsum dolor sit. Mi bibendum neque egestas congue. Egestas sed sed risus pretium quam vulputate. Diam donec adipiscing tristique risus nec feugiat in. Cursus sit amet dictum sit amet justo. Lacinia quis vel eros donec ac odio tempor.
-
-              Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Sed arcu non odio euismod lacinia at quis risus sed. In massa tempor nec feugiat nisl. Purus viverra accumsan in nisl. Mollis nunc sed id semper risus. Lectus quam id leo in vitae turpis. In fermentum et sollicitudin ac orci phasellus egestas. Enim nunc faucibus a pellentesque sit amet porttitor. Diam vel quam elementum pulvinar etiam non quam lacus. Orci dapibus ultrices in iaculis nunc. Vitae et leo duis ut diam quam nulla. Euismod lacinia at quis risus sed vulputate odio ut. Netus et malesuada fames ac turpis egestas. Feugiat pretium nibh ipsum consequat nisl vel pretium. Enim nunc faucibus a pellentesque sit. Cursus mattis molestie a iaculis. Non arcu risus quis varius.
-
-              Interdum consectetur libero id faucibus nisl tincidunt. Montes nascetur ridiculus mus mauris. Justo donec enim diam vulputate. Suspendisse interdum consectetur libero id faucibus. Vitae suscipit tellus mauris a diam maecenas sed enim ut. Ut placerat orci nulla pellentesque dignissim enim sit amet venenatis. Purus semper eget duis at tellus at urna. Aliquet risus feugiat in ante metus dictum at. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Risus nullam eget felis eget. Mauris a diam maecenas sed enim ut sem. Ullamcorper a lacus vestibulum sed.</p>
-            </div>
-            <div>
-              <h2><a id="mainCourse">Main Course</a></h2>
-              <p>Justo donec enim diam vulputate ut pharetra sit. Lacinia at quis risus sed vulputate odio ut. Nascetur ridiculus mus mauris vitae ultricies leo integer. Netus et malesuada fames ac turpis. Cras pulvinar mattis nunc sed blandit. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Mauris nunc congue nisi vitae. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Blandit turpis cursus in hac. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Eget nunc lobortis mattis aliquam faucibus. Sagittis vitae et leo duis ut diam quam. Mattis ullamcorper velit sed ullamcorper. Ac felis donec et odio pellentesque diam. Quis risus sed vulputate odio ut enim blandit volutpat. At consectetur lorem donec massa sapien faucibus et. Aenean sed adipiscing diam donec adipiscing tristique risus. Suspendisse ultrices gravida dictum fusce ut placerat. Orci sagittis eu volutpat odio facilisis mauris. Odio tempor orci dapibus ultrices in iaculis nunc sed.
-
-              Lobortis feugiat vivamus at augue eget arcu dictum varius. Lobortis elementum nibh tellus molestie nunc non. Sed adipiscing diam donec adipiscing tristique risus. Sed turpis tincidunt id aliquet. Donec adipiscing tristique risus nec feugiat. Nec ullamcorper sit amet risus nullam eget felis. Blandit aliquam etiam erat velit. Tincidunt ornare massa eget egestas. Sed turpis tincidunt id aliquet risus feugiat. Blandit massa enim nec dui nunc mattis enim ut. Quam elementum pulvinar etiam non quam lacus. Ac turpis egestas sed tempus urna et pharetra. Tortor posuere ac ut consequat. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet.
-
-              Sit amet purus gravida quis blandit turpis cursus in. Auctor eu augue ut lectus arcu bibendum at varius vel. Vel pretium lectus quam id leo in vitae turpis. Mi tempus imperdiet nulla malesuada. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Malesuada fames ac turpis egestas. Nisl nunc mi ipsum faucibus vitae aliquet nec. Elementum sagittis vitae et leo duis. Interdum posuere lorem ipsum dolor sit. Mi bibendum neque egestas congue. Egestas sed sed risus pretium quam vulputate. Diam donec adipiscing tristique risus nec feugiat in. Cursus sit amet dictum sit amet justo. Lacinia quis vel eros donec ac odio tempor.
-
-              Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Sed arcu non odio euismod lacinia at quis risus sed. In massa tempor nec feugiat nisl. Purus viverra accumsan in nisl. Mollis nunc sed id semper risus. Lectus quam id leo in vitae turpis. In fermentum et sollicitudin ac orci phasellus egestas. Enim nunc faucibus a pellentesque sit amet porttitor. Diam vel quam elementum pulvinar etiam non quam lacus. Orci dapibus ultrices in iaculis nunc. Vitae et leo duis ut diam quam nulla. Euismod lacinia at quis risus sed vulputate odio ut. Netus et malesuada fames ac turpis egestas. Feugiat pretium nibh ipsum consequat nisl vel pretium. Enim nunc faucibus a pellentesque sit. Cursus mattis molestie a iaculis. Non arcu risus quis varius.
-
-              Interdum consectetur libero id faucibus nisl tincidunt. Montes nascetur ridiculus mus mauris. Justo donec enim diam vulputate. Suspendisse interdum consectetur libero id faucibus. Vitae suscipit tellus mauris a diam maecenas sed enim ut. Ut placerat orci nulla pellentesque dignissim enim sit amet venenatis. Purus semper eget duis at tellus at urna. Aliquet risus feugiat in ante metus dictum at. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Risus nullam eget felis eget. Mauris a diam maecenas sed enim ut sem. Ullamcorper a lacus vestibulum sed.</p>
-            </div>
-            <div>
-              <h2><a id="dessert">Dessert</a></h2>
-              <p>Justo donec enim diam vulputate ut pharetra sit. Lacinia at quis risus sed vulputate odio ut. Nascetur ridiculus mus mauris vitae ultricies leo integer. Netus et malesuada fames ac turpis. Cras pulvinar mattis nunc sed blandit. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Mauris nunc congue nisi vitae. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Blandit turpis cursus in hac. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Eget nunc lobortis mattis aliquam faucibus. Sagittis vitae et leo duis ut diam quam. Mattis ullamcorper velit sed ullamcorper. Ac felis donec et odio pellentesque diam. Quis risus sed vulputate odio ut enim blandit volutpat. At consectetur lorem donec massa sapien faucibus et. Aenean sed adipiscing diam donec adipiscing tristique risus. Suspendisse ultrices gravida dictum fusce ut placerat. Orci sagittis eu volutpat odio facilisis mauris. Odio tempor orci dapibus ultrices in iaculis nunc sed.
-
-              Lobortis feugiat vivamus at augue eget arcu dictum varius. Lobortis elementum nibh tellus molestie nunc non. Sed adipiscing diam donec adipiscing tristique risus. Sed turpis tincidunt id aliquet. Donec adipiscing tristique risus nec feugiat. Nec ullamcorper sit amet risus nullam eget felis. Blandit aliquam etiam erat velit. Tincidunt ornare massa eget egestas. Sed turpis tincidunt id aliquet risus feugiat. Blandit massa enim nec dui nunc mattis enim ut. Quam elementum pulvinar etiam non quam lacus. Ac turpis egestas sed tempus urna et pharetra. Tortor posuere ac ut consequat. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet.
-
-              Sit amet purus gravida quis blandit turpis cursus in. Auctor eu augue ut lectus arcu bibendum at varius vel. Vel pretium lectus quam id leo in vitae turpis. Mi tempus imperdiet nulla malesuada. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Malesuada fames ac turpis egestas. Nisl nunc mi ipsum faucibus vitae aliquet nec. Elementum sagittis vitae et leo duis. Interdum posuere lorem ipsum dolor sit. Mi bibendum neque egestas congue. Egestas sed sed risus pretium quam vulputate. Diam donec adipiscing tristique risus nec feugiat in. Cursus sit amet dictum sit amet justo. Lacinia quis vel eros donec ac odio tempor.
-
-              Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Sed arcu non odio euismod lacinia at quis risus sed. In massa tempor nec feugiat nisl. Purus viverra accumsan in nisl. Mollis nunc sed id semper risus. Lectus quam id leo in vitae turpis. In fermentum et sollicitudin ac orci phasellus egestas. Enim nunc faucibus a pellentesque sit amet porttitor. Diam vel quam elementum pulvinar etiam non quam lacus. Orci dapibus ultrices in iaculis nunc. Vitae et leo duis ut diam quam nulla. Euismod lacinia at quis risus sed vulputate odio ut. Netus et malesuada fames ac turpis egestas. Feugiat pretium nibh ipsum consequat nisl vel pretium. Enim nunc faucibus a pellentesque sit. Cursus mattis molestie a iaculis. Non arcu risus quis varius.
-
-              Interdum consectetur libero id faucibus nisl tincidunt. Montes nascetur ridiculus mus mauris. Justo donec enim diam vulputate. Suspendisse interdum consectetur libero id faucibus. Vitae suscipit tellus mauris a diam maecenas sed enim ut. Ut placerat orci nulla pellentesque dignissim enim sit amet venenatis. Purus semper eget duis at tellus at urna. Aliquet risus feugiat in ante metus dictum at. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Risus nullam eget felis eget. Mauris a diam maecenas sed enim ut sem. Ullamcorper a lacus vestibulum sed.</p>
+          <h1>Menu</h1>
+          <div id="contentMeny">
+            <div class="matretter">
+              <h2>Appetizers</h2>
+              <ul id="appetizers">
+              </ul>
+              <h2>Main Course</h2>
+              <ul id="mainCourse">
+              </ul>
+              <h2>Desserts</h2>
+              <ul id="desserts">
+              </ul>
             </div>
           </div>
+        </div>
         </div>
     </div>
+    <footer id="footer">djejd ejfjsjjf ef e fjej</footer>
+    <script src="js/mal.js"></script>
+    <script>
+    /*This function runs through all the diiferent meals in the foods array(See foods.js) and appends them to the Menu.*/
+    function applyFood()  {
+        for(let food of foods) {
+          let listElement = document.createElement("li");
+          let image = document.createElement("img");
+          let header = document.createElement("h4");
+          let desc = document.createElement("p");
+          let aler = document.createElement("p");
+          let unordered;
+          console.table(food)
+          /*This loop checks which part of the menu this meal belongs to.*/
+          if (food.course == "Appetizer") {
+            unordered = document.getElementById("appetizers");
+          } else if (food.course  ==  "Main Course") {
+            unordered = document.getElementById("mainCourse");
+          } else {
+            unordered = document.getElementById("desserts");
+          }
 
+          image.setAttribute("src", food.img);
+          image.setAttribute("class", "matrettBilde");
+          aler.setAttribute("id", "allergy")
+          header.innerText = food.name;
+          desc.innerText = food.description;
+          listElement.setAttribute("class", "rettCSS");
+          aler.innerText = food.allergy;
+
+          listElement.appendChild(image);
+          listElement.appendChild(header);
+          listElement.appendChild(desc);
+          listElement.appendChild(aler);
+          unordered.appendChild(listElement);
+        }
+    }
+
+    applyFood();
+    </script>
 </body>
 </html>
