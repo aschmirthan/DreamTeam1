@@ -1,4 +1,4 @@
-    html{
+     html{
             margin: auto;
             background-color: #F9F7F2;
             overflow-x: hidden;
@@ -53,28 +53,7 @@
             z-index: -1;
             background-color: #F9F7F2;
         }
-        form {
-            width: 700px;
-        }
-        input {
-            padding: 6px 10px;
-            margin: 25px;
-            width: 500px;
-            border-radius: 4px;
-            border: solid black 1px;
-        }
-        input[type=submit]{
-           width: 100px;
-            background-color: #2ea041;
-            padding: 10px;
-            border: none;
-            color: white;
-            transition-duration: 0.5s;
-            float: right;
-        }
-        input[type=submit]:hover{
-            background-color: #398a79;
-        }
+
         #imgCont {
             float: right;
             width: 400px
@@ -138,7 +117,7 @@
             padding: 14px 16px;
             text-decoration: none;
         }
-        li:hover{
+        #meny>li:hover{
             color: gray;
             border-top: 2px solid gray;
             border-bottom: 2px solid gray;
@@ -195,12 +174,7 @@
             #content{
                 font-size: 12px;
             }
-            form {
-                width: 380px;
-            }
-            input {
-                width: 265px;
-            }
+
 
             li {
                 text-align: center;
@@ -217,10 +191,3 @@
             }
 
         }
-
-
-
-
-
-
-
