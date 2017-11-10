@@ -11,7 +11,7 @@ html{
             height: 800px;
             margin-left: -11.8px;
             margin-top: -11.8px;
-            margin: auto;
+
         }
         #banner{
             position:relative;
@@ -25,7 +25,7 @@ html{
             font-size: 60px;
         }
         #logo {
-            font-family: harrington;
+            font-family: harrington, sans-serif;
             display: inline-block;
             font-size: 50px;
             color: black;
@@ -46,7 +46,6 @@ html{
             display: block;
         }
         #content{
-            position: relative;
             top: 20px;
             width: 85%;
             font-size: 15px;
@@ -55,6 +54,28 @@ html{
             padding: 20px;
             text-align: left;
             z-index: -1;
+        }
+        form {
+            width: 700px;
+        }
+        input {
+            padding: 6px 10px;
+            margin: 25px;
+            width: 500px;
+            border-radius: 4px;
+            border: solid black 1px;
+        }
+        input[type=submit]{
+           width: 100px;
+            background-color: #2ea041;
+            padding: 10px;
+            border: none;
+            color: white;
+            transition-duration: 0.5s;
+            float: right;
+        }
+        input[type=submit]:hover{
+            background-color: #398a79;
         }
         #imgCont {
             float: right;
@@ -66,6 +87,44 @@ html{
             padding: 0;
             height: 100px;
             overflow: hidden;
+        }
+        #lol {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        #prev {
+            position: relative;
+            float: left;
+            color: white;
+            margin-left: -30px;
+            top: 50%;
+            border:none;
+            transform: rotate(90deg);
+            background-color: transparent;
+            font-size: 20px;
+
+        }
+        button:focus {
+            outline: 0;
+        }
+        button:hover {
+            text-shadow: 0px 5px 1px #888888;
+            cursor: pointer;
+        }
+        button:active {
+            text-shadow: 0px 1px 1px #888888;
+        }
+        #next {
+            position: relative;
+            float: right;
+            font-size: 20px;
+            top: 50%;
+            color: white;
+            transform: rotate(90deg);
+            border:none;
+            background-color: transparent;
         }
         li {
             float: left;
@@ -137,6 +196,12 @@ html{
             }
             #content{
                 font-size: 12px;
+            }
+            form {
+                width: 380px;
+            }
+            input {
+                width: 265px;
             }
 
             li {
