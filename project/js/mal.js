@@ -41,10 +41,11 @@
         window.onresize = function(){
             if(window.innerWidth>700){
                 meny1.style.display = "block";
-                openedMenu = false;
+                openedMenu = true;
+
             }
             else{
-                openedMenu = true;
+                openedMenu = false;
                 openMenu();
             }
         }
