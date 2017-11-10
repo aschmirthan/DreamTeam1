@@ -22,20 +22,20 @@ function changeClick(number){
 }
 
 slideRun();
-slide.onclick = function(evt){
-    x = evt.clientX;
-    if(x<slide.width/2){
-        sIndex-=1;
-        if (sIndex < 0){
-            sIndex = slidelist.lenght;
-        }
-        }
-    else{
+document.getElementById("next").onclick = function Next(){
         sIndex+=1;
         if (sIndex > slidelist.length - 1){
             sIndex = 0;
         }
-    }
+    console.log(slidelist[sIndex]);
+    slide.src="img/"+slidelist[sIndex];
+}
+
+document.getElementById("prev").onclick = function Prev(){
+        sIndex-=1;
+        if (sIndex < 0){
+            sIndex = (slidelist.length-1);
+        }
     console.log(slidelist[sIndex]);
     slide.src="img/"+slidelist[sIndex];
 }
