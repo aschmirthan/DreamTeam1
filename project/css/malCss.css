@@ -1,12 +1,10 @@
-html{
+    html{
             margin: auto;
             background-color: #F9F7F2;
             overflow-x: hidden;
         }
 
-
         #container{
-          /*  border:4px solid red;*/
             padding: 4px;
             height: 800px;
             margin-left: -11.8px;
@@ -34,8 +32,7 @@ html{
             top: 10px;
         }
         #meny{
-          /*  border: 2px solid blue;*/
-            height: 60px;
+            height: 48px;
             width: 100.9%;
             background-color: #F9F7F2;
             overflow: hidden;
@@ -54,6 +51,7 @@ html{
             padding: 20px;
             text-align: left;
             z-index: -1;
+            background-color: #F9F7F2;
         }
         form {
             width: 700px;
@@ -88,7 +86,7 @@ html{
             height: 100px;
             overflow: hidden;
         }
-        #lol {
+        #btnPrevNext {
             position: absolute;
             width: 100%;
             height: 100%;
