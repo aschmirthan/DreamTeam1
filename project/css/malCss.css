@@ -1,4 +1,4 @@
-     html{
+    html{
             margin: auto;
             background-color: #F9F7F2;
             overflow-x: hidden;
@@ -117,7 +117,7 @@
             padding: 14px 16px;
             text-decoration: none;
         }
-        #meny>li:hover{
+        li:hover{
             color: gray;
             border-top: 2px solid gray;
             border-bottom: 2px solid gray;
@@ -191,3 +191,10 @@
             }
 
         }
+
+
+
+
+
+
+
