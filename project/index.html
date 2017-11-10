@@ -19,7 +19,7 @@
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 100px;
+            font-size: 8vw;
             font-family: Harrington;
             color: #F9F7F2;
             text-shadow: 2px 2px black;
@@ -32,12 +32,14 @@
 </head>
 <body>
     <div id="divSlideshow">
-        <img id="slide" src="img/slide0.png" width="100%" height="100%"></img>
+        <div id = "btnPrevNext"><button id = "prev">PREVIOUS</button>
+        <button id = "next">NEXT</button></div>
+        <img id="slide" src="img/slide0.png" width="100%" height="100%">
         <h1 id="title">Golden Dao</h1>
     </div>
     <div id="container">
         <div id="banner">
-            <div id = "logo">GOLDEN  D A O</div>
+            <div id = "logo">GOLDEN  DAO</div>
         </div>
         <div id="heleMenybar">
              <div id="navbarIcon" class="tlf" onclick="shownavbarIcon(this)">
@@ -59,8 +61,8 @@
             </div>
         </div><br>
         <div id="content">
-            <img id = "imgCont" src="http://images.genius.com/16206d3edc736021e552c2d099ab1d2b.549x549x1.jpg">
-            Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien.
+            <h1>Content</h1>
+            <p>Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien.
             Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet,
             da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok.
             Lorem Ipsum har tålt tidens tann usedvanlig godt, og har i tillegg til å bestå gjennom fem århundrer
@@ -68,7 +70,7 @@
             Lorem Ipsum ble gjort allment kjent i 1960-årene ved lanseringen
             av Letraset-ark med avsnitt fra Lorem Ipsum,
             og senere med sideombrekkingsprogrammet Aldus PageMaker som
-            tok i bruk nettopp Lorem Ipsum for dummytekst.
+            tok i bruk nettopp Lorem Ipsum for dummytekst.</p>
         </div>
     </div>
 
@@ -77,4 +79,3 @@
 
 </body>
 </html>
-
