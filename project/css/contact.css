@@ -1,0 +1,31 @@
+.row {
+    width: 60%;
+    font-size: 20px;
+}
+input[type=submit]:active {
+    border: white;
+    color: white;
+}
+input[type=submit] {
+    width: 20%;
+}
+input {
+    width: 50%;
+    padding-left:5px;
+    height: 25px;
+    border-radius: 3px;
+    margin-left: 0px;
+    border: 1px solid gray;
+    outline: 0;
+}
+#message {
+    height: 70px;
+    width: 50%;
+    padding-left:5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    outline: 0;
+}
+p {
+    font-size: 18px;
+}
