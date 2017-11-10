@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comtact</title>
+    <link rel="stylesheet" type="text/css" href="css/malCss.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/lel2.png">
+</head>
+<body>
+    <div id="container">
+        <div id="banner">
+            <div id = "logo">GOLDEN  D A O</div>
+        </div>
+
+         <div id="heleMenybar">
+             <div id="navbarIcon" class="tlf" onclick="shownavbarIcon(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+             </div>
+
+
+            <div id="meny" class="menyCSS1">
+                <ul class="menybar">
+                    <a href="index.html"><li id="home" class="menyCss">Home</li></a>
+                    <a href="menu.html"><li id="menu" class="menyCss">Menu</li></a>
+                    <a href="about.html"><li id="about" class="menyCss">About</li></a>
+                    <a href="restaurant.html"><li id="restaurant" class="menyCss">Restaurant</li></a>
+                    <a href="reservation.html"><li id="reservation" class="menyCss">Reservation</li></a>
+                    <a href="contact.html"><li id="contact" class="menyCss">Contact</li></a>
+                </ul>
+            </div>
+         </div>
+        <div id="content">
+            <table>
+                <tr>
+                    <th class="row"><h3>Send us a mail:</h3></th>
+                    <th class="row"><h3>Connect us:</h3></th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Please fill the form and we will answer your mail as quickly as possible.<br>
+                        </p>
+                        <form onsubmit="submitted()">
+                            <input id="fullname" type="text" name="fullname" placeholder="Fullname" required><br><br>
+                            <input id="email" type="text"  name="email" placeholder="Email" required><br><br>
+                            <textarea id = "message" name="message" placeholder="Message" maxlength="300" required></textarea><br><br>
+                            <input type="submit" value="Send">
+                        </form>
+                    </td>
+                    <td>
+                        <p>The customer service is ready to answer any of your questions.<br><br>
+                            Mail: <a href="mailto:ggoldendaorestaurant@gmail.com">ggoldendaorestaurant@gmail.com </a><br><br><br>
+                        Contact us by phone: 2222 5555<br><br>
+                        Adress: Otto Nielsens veg 4, 7010 Trondheim<br><br>
+                        Mon-Sat: 10:00 - 20:00<br>
+                        Sun: 12:00 - 18:00<br><br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    </div>
+    <footer id="footer">djejd ejfjsjjf ef e fjej</footer>
+    <script src="js/mal.js"></script>
+    <script>
+        function submitted() {
+             alert("Thank you for your mail, we will try to answer it as qucikly as possible");
+
+        }
+    </script>
+</body>
+</html>
+
