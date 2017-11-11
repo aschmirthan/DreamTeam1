@@ -1,4 +1,4 @@
-.row {
+th {
     width: 60%;
     font-size: 20px;
 }
@@ -28,4 +28,16 @@ input {
 }
 p {
     font-size: 18px;
+    font-weight: normal;
+}
+#contact {
+    color: gray;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+@media screen and (max-width: 850px) {
+    th {
+        float: left;
+        width: 100%;
+    }
 }
