@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>H O M E</title>
-    <link rel="icon" href="img/logodrage.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" type="text/css" href="css/malCss.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
     <style>
         #divSlideshow{
             position: static;
@@ -29,7 +29,27 @@
         #slide{
             transition: 2s;
         }
-
+        html{
+        margin: auto;
+        overflow-x: hidden;
+        }
+        #container{
+            padding: 4px;
+            height: 180vh;
+            margin-left: -11.8px;
+            margin-top: -11.8px;
+        }
+        #content{
+            top: 20px;
+            width: 85%;
+            font-size: 15px;
+            height: 100%;
+            margin: auto;
+            padding: 20px;
+            text-align: left;
+            z-index: -1;
+            background-color: #F9F7F2;
+        }
 
     </style>
 </head>
@@ -62,18 +82,49 @@
                     <a href="contact.html"><li id="contact" class="menyCss">Contact</li></a>
                 </ul>
             </div>
-        </div><br>
+        </div>
         <div id="content">
-            <h1>Content</h1>
-            <p>Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien.
-            Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet,
-            da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok.
-            Lorem Ipsum har tålt tidens tann usedvanlig godt, og har i tillegg til å bestå gjennom fem århundrer
-            også tålt spranget over til elektronisk typografi uten vesentlige endringer.
-            Lorem Ipsum ble gjort allment kjent i 1960-årene ved lanseringen
-            av Letraset-ark med avsnitt fra Lorem Ipsum,
-            og senere med sideombrekkingsprogrammet Aldus PageMaker som
-            tok i bruk nettopp Lorem Ipsum for dummytekst.</p>
+            <table>
+            <tr>
+                <th>
+                <h1>A little bit about us</h1>
+                    Golden Dao is an old family restaurant, with a new amazing location in Trondheim, Solsiden.
+                    <br><br>
+                    Here we serve amazing traditional asian food, with a modern sense to it. <br><br>
+                    Want to know more? Visit our about page.
+                </th>
+                <th><img id = "imgAbout" class="imgCSS" src="img/home1.jpg"></th>
+            </tr>
+            </table><br><br>
+            <table>
+                <tr>
+                    <th>
+                        <img id = "imgMenu" class="imgCSS" src = "img/sweetnsour.jpg">
+                    </th>
+                    <th>
+                        <h1 id = "lol">Taste of our menu</h1>
+            <h2>Sweet and sour chicken:</h2><br><br>
+            <p>
+                A delicious tender chicken with an amazing sweet and sour sauce that elevates every flavour of the chicken.<br><br>
+                It is one ouf our most popular and best selling meals. <br><br>
+                To see our whole menu, visit our menu page.
+                    </th>
+                </tr>
+            </table>
+            <br><br>
+            <table>
+                <tr>
+                    <th>
+                       <h1>Our restaurant </h1>
+                        You can find us at Solsiden.<br><br>
+                        <a href="reservation.html">Order a table</a>
+
+                    </th>
+                    <th>
+                        <img id = "imgRes" class = "imgCSS" src="img/solsiden.jpg">
+                    </th>
+                </tr>
+            </table>
         </div>
     </div>
 
