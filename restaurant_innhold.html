@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resturant</title>
+     <link rel="stylesheet" type="text/css" href="css/malCss.css">
+    <style>
+        #map {
+            position: absolute;
+            width:50vw;
+            height: 30vw;
+        }
+        #location p{
+            max-width: 75ch;
+        }
+        #location{
+            width: 50%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="location">
+        <h1>Resturant</h1>
+        <h2>Solsiden</h2>
+        <p>
+            Come and visit us at the Beautiful Solsiden here in Trondheim and enjoy a tasteful meal by the docks.
+            Come on by for either a nice brunch or a fantastic candle lit dinner. Either way you will not be
+            disappointed by your stay. Golden Dao will be awaiting your company.</p><br>
+        <h3>Information</h3>
+        <p>
+            Mail: <a id = "lel" href="mailto:ggoldendaorestaurant@gmail.com">Golden Dao </a><br><br>
+            Contact us by phone: 2222 5555<br><br>
+            Adress: TMVkaia 21, 7043 Trondheim<br><br>
+            Monday - Tuesday: 10:00 - 22:00<br><br>
+            Friday - Saturday: 10:00 - 24:00<br><br>
+            Sunday: 10:00 - 20:00
+        </p><br><br>
+        <div id="map"></div>
+    </div>
+<script>
+            /// code from https://www.w3schools.com/graphics/tryit.asp?filename=trymap_overlays_marker
+  function myMap() {
+    var myCenter = new google.maps.LatLng(63.4347593, 10.4115624);
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {center: myCenter, zoom: 17};
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({position:myCenter});
+    marker.setMap(map);
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6DO112fu99kQ6QGzQqugppdM-dBmy5YM&callback=myMap"></script>
+</body>
+</html>
