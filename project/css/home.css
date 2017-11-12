@@ -3,11 +3,10 @@
 }
 h1 {
     text-align: left;
-    font-size: 2vw;
+    font-size: 1.7vw;
 }
 h2 {
-    font-size: 1.9vw;
-    text-align: center;
+    font-size: 1.5vw;
     float: left;
 }
 table {
@@ -18,19 +17,25 @@ table {
 th {
     font-weight: normal;
     text-align: left;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
     margin-top: 80px;
+    width: 50%;
+}
+#home {
+    color: gray;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+#imgMenu {
+    float: left;
+    width: 70%;
+    height: 50%;
+}
+.imgCSS {
+    width: 70%;
 }
 #imgRes {
     float: right;
-    width: 70%;
-}
-#imgMenu {
-    float: right;
-    padding-right: 30px;
-}
-.imgCSS {
-    width: 80%;
 }
 body {
     background-image: url('../img/bakgrunnSide.jpg');
@@ -40,9 +45,52 @@ body {
     background-size: cover;
     height: 500px;
 }
-
+#link {
+    text-decoration: none;
+}
+.thFirst {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid grey;
+}
 @media screen and (max-width: 960px){
-    #container {
-        height: 100vh;
+    th {
+        float: left;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        padding-bottom: 10px;
+        font-size: 3vw;
     }
+    h1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+    h2 {
+        font-size: 3vw;
+        text-align: center;
+        float: none;
+    }
+    table {
+        margin: 0 auto;
+    }
+    #container {
+        text-align: center;
+        padding: 5px;
+    }
+    #imgMenu{
+        float: none;
+        width: 50%;
+    }
+    #imgRes {
+        float: none;
+        width: 50%;
+    }
+    .imgCSS {
+        padding-top: 10px;
+    }
+    #imgAbout {
+        float: none;
+        width: 50%;
+    }
+
 }
