@@ -1,0 +1,233 @@
+html{
+            margin: auto;
+            background-color: #F9F7F2;
+            overflow-x: hidden;
+        }
+
+
+        #container{
+          /*  border:4px solid red;*/
+            padding: 4px;
+            height: 800px;
+            margin-left: -11.8px;
+            margin-top: -11.8px;
+
+        }
+        #banner{
+            position:relative;
+            width: 100.9%;
+            height: 100px;
+            text-align: center;
+            background-color: #F9F7F2;
+            z-index: -1;
+        }
+        #logo:first-letter {
+            font-size: 60px;
+        }
+        #logo {
+            font-family: harrington, sans-serif;
+            display: inline-block;
+            font-size: 50px;
+            color: black;
+            font-style: normal;
+            position: relative;
+            top: 10px;
+        }
+        #reservation {
+            color: gray;
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+        }
+        #meny{
+          /*  border: 2px solid blue;*/
+            height: 60px;
+            width: 100.9%;
+            background-color: #F9F7F2;
+            overflow: hidden;
+            display: table;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 44px;
+            display: block;
+        }
+        #content{
+            top: 20px;
+            width: 85%;
+            font-size: 15px;
+            margin: auto;
+            height: 700px;
+            padding: 20px;
+            text-align: left;
+            z-index: -1;
+        }
+        form {
+            width: 700px;
+        }
+        input {
+            padding: 6px 10px;
+            margin: 25px;
+            width: 500px;
+            border-radius: 4px;
+            border: solid black 1px;
+        }
+        input[type=submit]{
+            width: 100px;
+            background-color: #2ea041;
+            padding: 10px;
+            border: none;
+            color: white;
+            transition-duration: 0.5s;
+            float: right;
+        }
+        input[type=submit]:hover{
+            background-color: #398a79;
+        }
+        #imgCont {
+            float: right;
+            width: 400px
+        }
+        ul {
+            list-style-type: none;
+            margin:0;
+            padding: 0;
+            height: 100px;
+            overflow: hidden;
+        }
+        #lol {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        #prev {
+            position: relative;
+            float: left;
+            color: white;
+            margin-left: -30px;
+            top: 50%;
+            border:none;
+            transform: rotate(90deg);
+            background-color: transparent;
+            font-size: 20px;
+
+        }
+        button:focus {
+            outline: 0;
+        }
+        button:hover {
+            text-shadow: 0px 5px 1px #888888;
+            cursor: pointer;
+        }
+        button:active {
+            text-shadow: 0px 1px 1px #888888;
+        }
+        #next {
+            position: relative;
+            float: right;
+            font-size: 20px;
+            top: 50%;
+            color: white;
+            transform: rotate(90deg);
+            border:none;
+            background-color: transparent;
+        }
+        li {
+            float: left;
+            width: calc(100%/6);
+            height: 44px;
+            display: inline;
+            color: black;
+        }
+        li a{
+            display: block;
+            color:black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li:hover{
+            color: gray;
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+            transition:0.5s;
+            cursor:pointer;
+        }
+        li:visited {
+            color: black;
+        }
+
+        .sticky {
+          position: sticky;
+          top: 0;
+          width: 100%;
+        }
+        .sticky + .content {
+            padding-top: 60px;
+        }
+
+        @media screen and (max-width: 700px) {
+            #meny {
+                display: none;
+                height: 280px;
+            }
+            .tlf {
+                display: inline-block;
+                cursor: pointer;
+                margin-left: 30px;
+                float: left;
+                transition: 2s;
+            }
+
+            .bar1, .bar2, .bar3 {
+                width: 35px;
+                height: 5px;
+                background-color: #333;
+                margin: 6px 0;
+                transition: 0.4s;
+            }
+
+            .change .bar1 {
+                -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                transform: rotate(-45deg) translate(-9px, 6px);
+            }
+
+            .change .bar2 {
+                opacity: 0;
+            }
+
+            .change .bar3 {
+                -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                transform: rotate(45deg) translate(-8px, -8px);
+            }
+            #content{
+                font-size: 12px;
+            }
+            form {
+                width: 380px;
+            }
+            input {
+                width: 265px;
+            }
+
+            li {
+                text-align: center;
+                vertical-align: middle;
+                line-height: 5px;
+                float: left;
+                overflow: hidden;
+                height: 5px;
+                padding: 20px 0 20px 0;
+                width: 100%;
+            }
+            ul {
+                height: 400px;
+            }
+
+        }
+
+
+
+
+
+
+
