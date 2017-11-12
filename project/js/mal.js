@@ -18,9 +18,9 @@
 
 
         let openedMenu = false;
-
+        let meny1 = document.getElementById('meny');
         function openMenu(){
-            meny1 = document.getElementById('meny');
+
 
             if(!openedMenu){
                 meny1.style.display = "block";
@@ -39,6 +39,10 @@
                 openMenu();
             }
         window.onresize = function(){
+                changeMenu();
+        }
+
+        function changeMenu() {
             if(window.innerWidth>700){
                 meny1.style.display = "block";
                 openedMenu = false;
