@@ -1,0 +1,31 @@
+        #divSlideshow{
+            position: static;
+            width: 105%;
+            height: 100vh;
+            margin-left: -8px;
+            margin-top: -8px;
+            box-shadow: 5px 5px 100px black;
+            background-color: black;
+
+        }
+
+        #title {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 6vw;
+            font-family: "Lucida Fax";
+            color: white;
+                    #F9F7F2;
+            text-shadow: 2px 2px black;
+            -webkit-transition: color 2s linear 0s;
+            transition: color 1.5s linear 0s;
+         }
+
+        #slide{
+            opacity: 1;
+            -webkit-transition: opacity 2s linear 0s;
+            transition: opacity 1.5s linear 0s;
+        }
+
