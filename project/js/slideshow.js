@@ -27,6 +27,8 @@ function changeClick(number){
 }
 
 slideshowAuto();
+
+//We got this idea from another site http://junctionmoama.com.au/, but the javascript code we made ourself
 document.getElementById("next").onclick = function Next(){
         sIndex+=1;
         if (sIndex > slidelist.length - 1){
