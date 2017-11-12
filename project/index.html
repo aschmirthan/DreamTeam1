@@ -2,35 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" /> <!-- https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices -->
     <title>H O M E</title>
-    <link rel="stylesheet" type="text/css" href="css/malCss.css">
+    <link rel="icon" href="img/logodrage.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/device.css">
     <style>
-        #divSlideshow{
-            position: static;
-            width: 101.4%;
-            height: 100vh;
-            margin-left: -8px;
-            margin-top: -8px;
-            box-shadow: 5px 5px 100px black;
-        }
-        #title {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 8vw;
-            font-family: Harrington;
-            color: #F9F7F2;
-            text-shadow: 2px 2px black;
-         }
-        #slide{
-            transition: 2s;
-        }
-        html{
-        margin: auto;
-        overflow-x: hidden;
-        }
+
         #container{
             padding: 4px;
             height: 180vh;
@@ -47,6 +27,29 @@
             text-align: left;
             z-index: -1;
             background-color: #F9F7F2;
+        }
+        #footer {
+           position:relative;
+           margin: auto;
+           left:0px;
+           bottom:0px;
+           height:50px;
+           width:100%;
+           background-color: grey;
+           color: white;
+           text-align: center;
+        }
+        #footer p{
+            float: left;
+            margin-top: -26px;
+            margin-bottom: 2px;
+            padding-left: 150px;
+        }
+        #socialLinks img{
+            width : 20px;
+            height : 100%;
+            margin-top: 17px;
+            opacity: 0.75;
         }
     </style>
 </head>
@@ -79,8 +82,8 @@
                     <a href="contact.html"><li id="contact" class="menyCss">Contact</li></a>
                 </ul>
             </div>
-        </div>
-        <div id="content">
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <div id="content">
             <table>
             <tr>
                 <th class = "thFirst">
@@ -122,6 +125,13 @@
                     </th>
                 </tr>
             </table>
+        </div>
+        <div id="footer">
+            <div id="socialLinks">
+                <a href="https://www.facebook.com"><img src="img/fb.png"></a>
+                <a href="https://www.instagram.com"><img src="img/ig.png"></a>
+            </div>
+            <p><small>We do not own any images on this site</small></p>
         </div>
     </div>
 

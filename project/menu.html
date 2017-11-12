@@ -5,34 +5,27 @@
     <meta name="viewport" content="width=device-width" /> <!-- https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices -->
     <title>mal</title>
     <link rel="stylesheet" type="text/css" href="css/malCss.css">
+    <link rel="stylesheet" type="text/css" href="css/device.css">
     <script src="js/foods.js"></script>
     <style>
+
     ul {
       height: auto;
     }
-
-
     .matrettBilde {
       margin-right: auto;
       margin-left: auto;
-      /*display: block;
-      width: 50%;
-      height: 50%;
-      max-width: 200px;
-      max-height: 200px;*/
       margin-top: 10px;
       background-position: center;
       background-size: calc(20vw);
-
     }
-
     .rettCSS {
       box-shadow: 1px 1px 1px grey;
       margin: 10px;
       text-align: center;
       /*overflow: hidden;*/
       whitespace: normal;
-      height: 20%;
+      height: 350px;
       width: calc(100%/4);
       text-align: center;
     }
@@ -48,11 +41,14 @@
         width: 100%;
 
       }
-
       .matrettBilde {
-
           background-size: 70vw;
       }
+
+      #content>li{
+          line-height: normal;
+      }
+
     }
 
     </style>
@@ -99,12 +95,16 @@
             </div>
           </div>
         </div>
+
+
+
         </div>
     </div>
     <script src="js/mal.js"></script>
     <script>
     /*This function runs through all the diiferent meals in the foods array(See foods.js) and appends them to the Menu.*/
     function applyFood()  {
+        document.getElementById('appetizers').innerHTML = unordered = document.getElementById("mainCourse").innerHTML = document.getElementById('desserts').innerHTML = "";
         for(let food of foods) {
           let listElement = document.createElement("li");
           let image = document.createElement("div");
@@ -147,11 +147,11 @@
 
     applyFood();
     window.onresize = function () {
-        document.getElementById('appetizers').innerHTML = unordered = document.getElementById("mainCourse").innerHTML = document.getElementById('desserts').innerHTML = "";
         applyFood();
+        changeMenu();
     }
     </script>
-    <footer id="footer"></footer>
+
 </body>
 </html>
 
