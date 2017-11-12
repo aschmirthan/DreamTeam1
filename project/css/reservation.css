@@ -33,6 +33,11 @@ html{
             position: relative;
             top: 10px;
         }
+        #reservation {
+            color: gray;
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+        }
         #meny{
           /*  border: 2px solid blue;*/
             height: 60px;
