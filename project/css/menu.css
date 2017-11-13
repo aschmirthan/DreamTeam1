@@ -1,0 +1,63 @@
+ul {
+      height: auto;
+    }
+    .matrettBilde {
+      margin-right: auto;
+      margin-left: auto;
+      /*display: block;
+      width: 50%;
+      height: 50%;
+      max-width: 200px;
+      max-height: 200px;*/
+      margin-top: 10px;
+      background-position: center;
+      background-size: calc(20vw);
+    }
+    #container {
+        height: auto;
+    }
+    .rettCSS {
+      box-shadow: 1px 1px 1px grey;
+      margin: 10px;
+      text-align: center;
+      /*overflow: hidden;*/
+      whitespace: normal;
+      height: 20%;
+      width: calc(100%/4);
+      text-align: center;
+    }
+    li:hover {
+      color: black;
+      cursor: default;
+      font-size: 16px;
+    }
+    @media screen and (max-width: 700px) {
+      .rettCSS {
+        width: 100%;
+      }
+      .matrettBilde {
+          background-size: 70vw;
+      }
+    }
+        #divButtons{
+            text-align: center;
+        }
+        button{
+            width: 100px;
+            background-color: lightgray;
+            padding: 10px;
+            border: none;
+            color: black;
+            transition-duration: 0.5s;
+            outline: 0;
+        }
+        button:hover{
+            text-shadow: none;
+            color: white;
+            border :2px solid white;
+        }
+        .pageJump{
+          font-size: 3vh;
+          text-decoration: none;
+          color: black;
+        }
