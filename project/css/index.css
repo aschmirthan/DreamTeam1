@@ -89,14 +89,14 @@
 
         /* logo */
         #logo:first-letter {
-            font-size: 7vw;
+            font-size: 6vw;
         }
         #logo {
             position: absolute;
             top: 60%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 5.8vw;
+            font-size: 5vw;
             font-family: "Times New Roman", sans-serif;
             color: black;
         }
@@ -105,11 +105,12 @@
         #footer {
             position: relative;
             height: 40px;
-            background-color: lightgray;
+            background-color: whitesmoke;
             width: 100%;
             margin: auto;
             text-align: left;
             border: 2px solid transparent;
+            box-shadow: 2px 2px 25px black;
         }
         #socialLinks{
             float: left;
