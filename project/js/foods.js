@@ -1,4 +1,4 @@
-const foods = [
+let foods = [
   {
     name: "Tikka Tikka",
     img: "img/tikkatikka.jpg",
@@ -6,7 +6,8 @@ const foods = [
     description: "A delicious comination of deep fried chicken and sauce from the east.",
     price: 89,
     allergy: "Allergies: Lactose",
-    course: "Main Course"
+    course: "Main Course",
+    takeaway: true
   },
   {
     name: "Curry Wurry",
@@ -15,7 +16,8 @@ const foods = [
     description: "Chef Dao's own special twist on the traditional chicken curry.",
     price: 79,
     allergy: "No allergies.",
-    course: "Main Course"
+    course: "Main Course",
+    takeaway: true
   },
   {
     name: "Crispy Tenders",
@@ -24,7 +26,8 @@ const foods = [
     description: "The crispiest chicken strips in town with a homemade dipping sauce.",
     price: 49,
     allergy: "Allergies: Gluten",
-    course: "Appetizer"
+    course: "Appetizer",
+    takeaway: true
   },
   {
     name: "Ice Ice",
@@ -33,7 +36,8 @@ const foods = [
     description: "Ice cold ice cream topped with chocolate sauce.",
     price: 49,
     allergy: "Allergies: Lactose",
-    course: "Dessert"
+    course: "Dessert",
+    takeaway: false
   },
   {
     name: "Sweet and Sour Chicken",
@@ -42,17 +46,19 @@ const foods = [
     description: "A mix of chicken and vegetables served with a delicous sweet and sour sauce.",
     price: 79,
     allergy: "No allergies.",
-    course: "Main Course"
-  }
+    course: "Main Course",
+    takeaway: true
+  },
 ];
 
-/* Mal:
-  {
-  name: ,
-  img: ,
-  description: ,
-  price: ,
-  allergy: "Allergies: ",
-  course:
-},
-*/
+
+
+
+let takeawaylist = [];
+for(let food of foods){
+    if(food.takeaway){
+        takeawaylist.push(food);
+    }
+}
+
+
