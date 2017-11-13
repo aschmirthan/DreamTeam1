@@ -3,7 +3,7 @@
         let maincourse = document.getElementById("mainCourse");
         let dessert = document.getElementById("desserts");
 
-    function applyFood(list)  {
+    function applyFood(list)  { //Fuction that creates divs, pars, h4s, and puts image in a div that displays each of the meals in the foos array using the createElement function
         appetizer.innerHTML = dessert.innerHTML = maincourse.innerHTML = "";
         for(let food of list) {
           let listElement = document.createElement("li");
@@ -64,7 +64,7 @@
         }
     }
     applyFood(foods);
-    window.onresize = function () {
+    window.onresize = function () {  //Removes everything inside of it
         document.getElementById('appetizers').innerHTML = unordered = document.getElementById("mainCourse").innerHTML = document.getElementById('desserts').innerHTML = "";
         applyFood(foods);
     }
@@ -72,7 +72,7 @@
     let takeAway = document.getElementById("takeAway");
     let sjekker = true;
 
-    takeAway.onclick  = function takeawayButton() {
+    takeAway.onclick  = function takeawayButton() { //Take the index of elements that has takeaway = true and display them on the screen
         appetizer.innerHTML = dessert.innerHTML = maincourse.innerHTML = "";
         takeawaylist = [];
         if(sjekker){
@@ -98,7 +98,7 @@
         }
     }
 
-    function allergier() {
+    function allergier() { //Goes through the array allergies and makes checkboxes
         for(let allergi of allergies){
             let par = document.createElement("p");
             let textnode = document.createTextNode(allergi.name);
@@ -113,8 +113,8 @@
 
         }
         }
-sortallergy = foods;
-    function sorting(event) {
+sortallergy = foods; //Sets the empty array to be foos array
+    function sorting(event) { //Function that sorts out the allergies and display them on the screen
         const target = event.target.id;
         for(let i = 0; i< allergies.length; i++){
             if(target == allergies[i].name){
@@ -131,7 +131,7 @@ sortallergy = foods;
         applyFood(sortallergy);
     }
 
-    document.getElementById("showAll").onclick = function () {
+    document.getElementById("showAll").onclick = function () { //Function for button that shows all meals back
         location.reload();
         applyFood(foods);
         console.log(foods);

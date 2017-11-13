@@ -1,3 +1,4 @@
+//Oject in array of foods in the menu
 let foods = [
   {
     name: "Tikka Tikka",
@@ -92,11 +93,12 @@ let foods = [
   }
 ];
 
-
+// Array of different allergies
 let allergies = [{name: "Lactose", checks: false}, {name: "Nuts", checks: false },{name: "Gluten", checks: false},{name: "Egg", checks: false}];
-let sortallergy = [];
+let sortallergy = []; //Sorted empty array
 
-let takeawaylist = [];
+let takeawaylist = []; // Empty array for takeaway
+//Making a new array with only takeaway elements
 for(let food of foods){
     if(food.takeaway){
         takeawaylist.push(food);
