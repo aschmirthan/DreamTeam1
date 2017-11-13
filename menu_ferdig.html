@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" /> <!-- https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices -->
+    <title>mal</title>
+    <link rel="stylesheet" type="text/css" href="css/malCss.css">
+    <script src="js/foods.js"></script>
+    <style>
+    ul {
+      height: auto;
+    }
+
+
+    .matrettBilde {
+      margin-right: auto;
+      margin-left: auto;
+      /*display: block;
+      width: 50%;
+      height: 50%;
+      max-width: 200px;
+      max-height: 200px;*/
+      margin-top: 10px;
+      background-position: center;
+      background-size: calc(20vw);
+
+    }
+
+    .rettCSS {
+      box-shadow: 1px 1px 1px grey;
+      margin: 10px;
+      text-align: center;
+      /*overflow: hidden;*/
+      whitespace: normal;
+      height: 20%;
+      width: calc(100%/4);
+      text-align: center;
+    }
+
+    li:hover {
+      color: black;
+      cursor: default;
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 700px) {
+      .rettCSS {
+        width: 100%;
+
+      }
+
+      .matrettBilde {
+
+          background-size: 70vw;
+      }
+    }
+        #buttonbox{
+            text-align: center;
+        }
+
+        #takeawaycheck{
+            width: 100px;
+            background-color: lightgray;
+            padding: 10px;
+            border: none;
+            color: black;
+            transition-duration: 0.5s;
+
+        }
+        #takeawaycheck:hover{
+            text-shadow: none;
+            color: white;
+            border :2px solid white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="banner">
+            <div id = "logo">GOLDEN  D A O</div>
+        </div>
+
+         <div id="heleMenybar">
+             <div id="navbarIcon" class="tlf" onclick="shownavbarIcon(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+             </div>
+
+
+            <div id="meny" class="menyCSS1">
+                <ul class="menybar">
+                    <a href="index.html"><li id="home" class="menyCss">Home</li></a>
+                    <a href="menu.html"><li id="menu" class="menyCss">Menu</li></a>
+                    <a href="about.html"><li id="about" class="menyCss">About</li></a>
+                    <a href="restaurant.html"><li id="restaurant" class="menyCss">Restaurant</li></a>
+                    <a href="reservation.html"><li id="reservation" class="menyCss">Reservation</li></a>
+                    <a href="contact.html"><li id="contact" class="menyCss">Contact</li></a>
+                </ul>
+            </div>
+         </div>
+        <div id="content">
+
+          <div id="contentMeny">
+              <div id="buttonbox">
+                  <button id="takeawaycheck">Take-away</button>
+              </div>
+            <h1 id="tittel">Menu</h1>
+            <div class="matretter">
+              <h2>Appetizers</h2>
+              <ul id="appetizers">
+              </ul>
+              <h2>Main Course</h2>
+              <ul id="mainCourse">
+              </ul>
+              <h2>Desserts</h2>
+              <ul id="desserts">
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <script src="js/mal.js"></script>
+    <script>
+    /*This function runs through all the diiferent meals in the foods array(See foods.js) and appends them to the Menu.*/
+        let appetizer = document.getElementById("appetizers");
+        let maincourse = document.getElementById("mainCourse");
+        let dessert = document.getElementById("desserts");
+
+    function applyFood(list)  {
+        appetizer.innerHTML = dessert.innerHTML = maincourse.innerHTML = "";
+        for(let food of list) {
+          let listElement = document.createElement("li");
+          let header = document.createElement("h4");
+          let desc = document.createElement("p");
+          let price = document.createElement("p");
+          let allergy = document.createElement("p");
+          let image = document.createElement("div");
+          listElement.style.height = "100%";
+          let unordered;
+          /*This loop checks which part of the menu this meal belongs to.*/
+            if (food.course == "Appetizer") {
+                unordered = document.getElementById("appetizers");
+            } else if (food.course  ==  "Main Course") {
+                unordered = document.getElementById("mainCourse");
+            } else {
+                unordered = document.getElementById("desserts");
+            }
+
+          image.style.backgroundImage = "url("+food.img+")";
+          if(window.innerWidth<700){
+              image.style.width = image.style.height = "150px";
+          }
+          else{
+              image.style.width = image.style.height = "10vw";
+          }
+
+          header.style.width = "100%";
+          header.style.height = "25%";
+          desc.style.width = "100%";
+          desc.style.height = "25%";
+          price.innerText = food.price + ",-";
+          header.style.margin = desc.style.margin = "auto";
+          header.innerText = food.name;
+          image.setAttribute("class", "matrettBilde");
+          desc.innerHTML = food.description;
+          allergy.innerText = "Allergies: " + food.allergy;
+          listElement.setAttribute("class", "rettCSS");
+          listElement.appendChild(header);
+          listElement.appendChild(desc);
+          listElement.appendChild(image);
+          listElement.appendChild(allergy);
+          listElement.appendChild(price);
+
+
+         if(list == takeawaylist){
+           listElement.setAttribute("id", food.name);
+           image.id = allergy.id = price.id = header.id = desc.id = listElement.id;
+           listElement.addEventListener("click", addtoCart);
+         }
+          unordered.appendChild(listElement);
+         function addtoCart(event){
+        console.log(event.target.id);
+
+    }
+        }
+    }
+    applyFood(foods);
+    window.onresize = function () {
+        document.getElementById('appetizers').innerHTML = unordered = document.getElementById("mainCourse").innerHTML = document.getElementById('desserts').innerHTML = "";
+        applyFood(foods);
+    }
+
+    let menyknapp = document.getElementById("takeawaycheck");
+    let sjekker = true;
+
+    menyknapp.onclick  = function () {
+        appetizer.innerHTML = dessert.innerHTML = maincourse.innerHTML = "";
+        takeawaylist = [];
+        if(sjekker){
+            for(var food of foods){
+                if(food.takeaway == true){
+                    takeawaylist.push(food);
+                }
+        }
+            applyFood(takeawaylist);
+            sjekker = false;
+            document.getElementById("tittel").innerHTML = "Take-away";
+            document.getElementById("takeawaycheck").innerHTML = "Menu";
+        }
+        else {
+            applyFood(foods);
+            sjekker = true;
+            document.getElementById("tittel").innerHTML = "Menu";
+            document.getElementById("takeawaycheck").innerHTML = "Take-away";
+        }
+    }
+    </script>
+    <footer id="footer"></footer>
+</body>
+</html>
+
