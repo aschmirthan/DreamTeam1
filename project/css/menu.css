@@ -61,3 +61,8 @@ ul {
           text-decoration: none;
           color: black;
         }
+      #menu {
+            color: gray;
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+        }
