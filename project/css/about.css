@@ -1,0 +1,27 @@
+#openpositions{
+    width: 100%;
+    height: 150px;
+}
+#openpositions>li{
+    border:none;
+    text-align: left;
+    display: block;
+    width: 100%;
+}
+#openpositions>li:hover{
+    color: black;
+    cursor: auto;
+}
+#aboutfood{
+    margin-bottom: 4%;
+}
+.text{
+    line-height: 170%;
+}
+#pictures{
+    margin-top: 5%;
+    text-align: center;
+}
+.picture{
+    margin: 2%;
+}
