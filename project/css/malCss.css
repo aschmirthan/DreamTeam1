@@ -1,29 +1,39 @@
         html{
-            margin: auto;
+            margin:auto;
             overflow-x: hidden;
             background-color: #F9F7F2;
         }
 
         #container{
+            width:102%;
             padding: 4px;
-            height: 800px;
+            height: auto;
             margin-left: -11.8px;
             margin-top: -11.8px;
-            width: 102%;
-
+        }
+        #content{
+            top: 20px;
+            width: 85%;
+            font-size: 15px;
+            height: 100%;
+            margin: auto;
+            padding: 20px;
+            text-align: left;
+            z-index: -1;
+            background-color: #F9F7F2;
         }
         #banner{
             position:relative;
-            width: 100.9%;
+            width: 100%;
             height: 100px;
             text-align: center;
             background-color: #F9F7F2;
             z-index: -1;
         }
-
+        /* menybar */
         #meny{
             height: 48px;
-            width: 100.9%;
+            width: 100%;
             background-color: #F9F7F2;
             overflow: hidden;
             display: table;
@@ -31,17 +41,6 @@
             vertical-align: middle;
             line-height: 44px;
             display: block;
-        }
-        #content{
-            top: 20px;
-            width: 85%;
-            font-size: 15px;
-            margin: auto;
-            height: auto;
-            padding: 20px;
-            text-align: left;
-            z-index: -1;
-            background-color: #F9F7F2;
         }
 
         #navbarIcon{
@@ -79,7 +78,7 @@
         li:visited {
             color: black;
         }
-
+        /* Position sticky to navigation bar */
         .sticky {
           position: sticky;
           top: 0;
@@ -89,17 +88,42 @@
             padding-top: 60px;
         }
 
+        /* logo */
         #logo:first-letter {
-            font-size: 8vw;
+            font-size: 7vw;
         }
         #logo {
             position: absolute;
             top: 60%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 6vw;
+            font-size: 5.8vw;
             font-family: "Times New Roman", sans-serif;
             color: black;
+        }
 
+        /* Footer */
+        #footer {
+            position: relative;
+            height: 40px;
+            background-color: lightgray;
+            width: 100%;
+            margin: auto;
+            text-align: left;
+            border: 2px solid transparent;
+        }
+        #socialLinks{
+            float: left;
+            text-align: right;
+            width:50%;
+            vertical-align: middle;
+            line-height: 40px;
+        }
 
-
+        #socialLinks img{
+            width: 5%;
+            height: 5%;
+        }
+        #pFooter{
+            font-size: 1.2vw;
+        }

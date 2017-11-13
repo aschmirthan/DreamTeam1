@@ -52,7 +52,7 @@ body {
     border-top: 2px solid gray;
     border-bottom: 2px solid grey;
 }
-@media screen and (max-width: 960px){
+@media screen and (max-width: 700px){
     th {
         float: left;
         text-align: center;
