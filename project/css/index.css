@@ -105,7 +105,7 @@
         #footer {
             position: relative;
             height: 40px;
-            background-color: whitesmoke;
+            background-color: lightgray;
             width: 100%;
             margin: auto;
             text-align: left;
@@ -126,4 +126,5 @@
         }
         #pFooter{
             font-size: 1.2vw;
+            color: white;
         }

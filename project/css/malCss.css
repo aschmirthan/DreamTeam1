@@ -100,6 +100,7 @@
             font-size: 5vw;
             font-family: "Times New Roman", sans-serif;
             color: black;
+
         }
 
         /* Footer */
@@ -126,4 +127,5 @@
         }
         #pFooter{
             font-size: 1.2vw;
+            color: white;
         }
