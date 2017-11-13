@@ -2,7 +2,7 @@
 const slidelist = ["slide0.png", "slide1.png","slide2.jpg","slide3.jpg", "slide10.jpg", "slide5.jpg", "slide6.jpg", "slide7.jpg", "slide8.jpg", "slide9.jpg"];
 var sIndex = 0;
 var slide = document.getElementById("slide");
-
+// Learned how to make a slideshow with ANIMATION which was our problem - https://www.youtube.com/watch?v=-MifpF7p1P0
 //functions which maintains the slideshow
 function slideshowAuto(){
     sIndex +=1;
