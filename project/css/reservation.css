@@ -1,6 +1,11 @@
         form {
             width: 700px;
         }
+        #reservation {
+            color: gray;
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+        }
         input {
             padding: 6px 10px;
             margin: 25px;
