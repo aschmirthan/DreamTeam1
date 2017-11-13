@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" /> <!-- https://stackoverflow.com/questions/7859336/why-are-my-css3-media-queries-not-working-on-mobile-devices -->
-    <title>mal</title>
+    <title>R E S T A U R A N T</title>
     <link rel="stylesheet" type="text/css" href="css/malCss.css">
     <link rel="stylesheet" type="text/css" href="css/device.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logodrage.png">
+
     <style>
+
         #map {
             position: absolute;
             width:50vw;
             height: 30vw;
+            margin-bottom: 50px;
         }
 
         #location p{
@@ -20,13 +24,14 @@
         #location{
             width: 50%;
             margin:auto;
+            margin-bottom: 30vw;
         }
     </style>
 </head>
 <body>
-    < id="container">
+    <div id="container">
         <div id="banner">
-            <div id = "logo">GOLDEN  D A O</div>
+            <div id = "logo">GOLDEN  DAO</div>
         </div>
 
          <div id="heleMenybar">
@@ -68,6 +73,13 @@
                 <div id="map"></div>
             </div>
         </div>
+        <div id="footer">
+            <div id="socialLinks">
+                <a href="https://www.facebook.com"><img src="img/fb.png"></a>
+                <a href="https://www.instagram.com"><img src="img/ig.png"></a>
+            </div>
+            <p id="pFooter">&nbsp;&nbsp;&nbsp;We do not own any images on this sites</p>
+        </div>
 
     </div>
     <script>
@@ -83,6 +95,8 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6DO112fu99kQ6QGzQqugppdM-dBmy5YM&callback=myMap"></script>
     <script src="js/mal.js"></script>
+
+
 
 </body>
 </html>
