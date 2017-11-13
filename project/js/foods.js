@@ -43,7 +43,7 @@ const foods = [
     price: 79,
     allergy: "No allergies.",
     course: "Main Course"
-  },
+  }
 ];
 
 /* Mal:
